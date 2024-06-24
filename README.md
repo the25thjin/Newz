@@ -1,5 +1,7 @@
 # Newz
 Give it a keyword, it will give you news on it. (used news api and tailwind css )(you can toggle it to darkmode too)
 
-![Screenshot 2024-06-24 092429](https://github.com/the25thjin/Newz/assets/142211590/40752e32-b8b6-4201-9388-686615f614ad)
+![Screenshot 2024-06-24 114420](https://github.com/the25thjin/Newz/assets/142211590/eb8f28d7-f41f-42b4-96e2-ce39c9e1ff81)
+![Screenshot 2024-06-24 114232](https://github.com/the25thjin/Newz/assets/142211590/2a64a69e-a28d-402d-922b-d731c0bcd0f6)
+
 
