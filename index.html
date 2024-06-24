@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newz</title>
+    <link rel="stylesheet" href="../../src/output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b9783fcdf6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="h-screen w-screen bg-[#d9d9d9] dark:bg-black dark:text-white">
+    <!-- pre header -->
+    <div class="upper-header font-roboto">
+      <ul class="w-screen h-10 flex justify-end items-center p-5 gap-20">
+        <li>
+          <h5>Contact : <a href="tel:+91 1234567890">1234567890</a></h5>
+        </li>
+        <li>
+          <h5>Email : <a href="mailto:newz@gmail.com">newz@gmail.com</a></h5>
+        </li>
+      </ul>
+    </div>
+    <!-- main header -->
+    <div class="main-header bg-primary font-roboto dark:bg-secondary">
+      <ul class="text-3xl p-10 flex justify-between items-center">
+        <li>
+          <div class="title">
+            <h1>Newz</h1>
+          </div>
+        </li>
+        <li>
+          <div class="theme-toggle">
+            <button type="button">
+              <i class="icon fa-solid fa-circle-half-stroke"></i>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- main body  -->
+    <div
+      class="main w-screen h-4/5 flex justify-center font-roboto"
+    >
+    <div class="w-3/4 h-full flex justify-around items-center">
+      <div>
+        <button id="previous" class="bg-primary w-10 h-10  dark:text-black dark:bg-secondary">&lt;</button>
+      </div>
+      <div
+        class="container rounded-3xl bg-primary w-2/5 h-3/4 dark:bg-secondary"
+      >
+        <div class="search-area flex justify-center">
+          <input
+            id="newsElement"
+            placeholder="Give me a keyword"
+            type="text"
+            class="pl-2 text-center mt-5 w-40 h-10 rounded-l-xl outline-none dark:text-black"
+          />
+          <button
+            type="submit"
+            onclick="resetSearch()"
+            class="bg-white h-10 w-10 mt-5 rounded-r-xl"
+          >
+            <i class="fa-solid fa-magnifying-glass dark:text-black"></i>
+          </button>
+        </div>
+
+        <div class="flex justify-center items-center w-full h-3/4">
+          <div class="h-3/4 w-3/4 bg-[#D9D9D9] dark:bg-black">
+            <img
+              src=""
+              alt="Image is not available"
+              id="newsImage"
+              class="w-full h-full bg-cover hidden"
+            />
+          </div>
+        </div>
+        <div class="text-center w-full h-10">
+          <a id="newsLink" alt="link" target="_blank"
+            ><h2 id="headline"></h2
+          ></a>
+        </div>
+      </div>
+      <div>
+        <button id="next" type="button" class="bg-primary w-10 h-10 dark:text-black dark:bg-secondary">
+          &gt;
+        </button>
+      </div>
+    </div>
+    </div>
+    <!-- js -->
+    <script src="app.js"></script>
+  </body>
+</html>
